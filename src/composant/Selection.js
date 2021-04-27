@@ -3,13 +3,14 @@ console.log(data);
 
 const Selection = () => {
   return (
-    <div>
+    <div className="container">
       {data.map((elem, index) => {
         return (
-          <div>
-            key={index}
-            category={elem.category}
-            images={elem.images}
+          <div className="block-2">
+            {/* key={index} */}
+            <h2>{elem.category}</h2>
+
+            <img src={elem.images} alt="" />
           </div>
         );
       })}
